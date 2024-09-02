@@ -11,6 +11,6 @@ public class Poupanca extends Conta
 
     public void atualizarSaldo()
     {
-        saldo = saldo * reajusteMensal;
+        saldo = saldo + (saldo * reajusteMensal);
     }
 }

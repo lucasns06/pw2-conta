@@ -21,7 +21,7 @@ public class Corrente extends Conta
         {
             saldo = saldo - valor;
             atualizarSaldo();
-            return "Saldo insuficiente, usando o limite! ";
+            return "Saldo insuficiente, usando o limite! " + consultarSaldo();
         }
         else {
             return "Saldo insuficiente " + consultarSaldo();
@@ -32,6 +32,6 @@ public class Corrente extends Conta
     public void atualizarSaldo()
     {
         if(saldo < 0)
-            saldo = saldo * 0.08;
+            saldo = saldo + (saldo * 0.08);
     }
 }
