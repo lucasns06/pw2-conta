@@ -21,7 +21,7 @@ public class Corrente extends Conta
         {
             saldo = saldo - valor;
             atualizarSaldo();
-            return "Saldo insuficiente, usando o limite! " + consultarSaldo();
+            return "Saldo insuficiente, usando o limite! (juros de 8%) " + consultarSaldo();
         }
         else {
             return "Saldo insuficiente " + consultarSaldo();
