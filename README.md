@@ -25,3 +25,13 @@ public enum TipoCapaEnum
 A classe principal se chama superclasse, as classes "filhas" que herda da superclasse se chama subclasse.
 **Superclasse: ** conhecida como "classe mãe"
 **Subclasse: ** conhecida como "classe filha"
+
+![image](https://github.com/user-attachments/assets/a0ec4432-8928-4911-a477-cc57c5befcb0)
+
+se usa o comando "extends" para uma classe herdar da superclasse:
+
+```java
+public class Gerente extends Funcionario{
+private double gratificacao;
+}
+```
